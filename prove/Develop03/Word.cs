@@ -3,8 +3,7 @@ using System.ComponentModel;
 
 public class Word
 {   
-    public string _text;
-    public bool _isHidden;
+    private string _text;
 
     public Word(string text)
     {
@@ -29,9 +28,5 @@ public class Word
             return false;
         }
     }
-    
-    // public string GetDisplayText()
-    // {
-    //     return "";
-    // }
+
 }

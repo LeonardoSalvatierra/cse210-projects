@@ -2,7 +2,7 @@ using System;
 
 public class Scripture
 {
-    public string _reference;
+
     private List<string> _words = new List<string>();
 
     public Scripture(string words)
