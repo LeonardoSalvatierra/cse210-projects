@@ -25,7 +25,6 @@ class Program
                     BreathingActivity breathingActivity = new BreathingActivity(activity1, text1, duration1);
                     breathingActivity.Run();
                     Message1.DisplayEndingMessage(duration1, activity1);
-                    
                     break;
                 case 2:
                     string activity2 = "Listing Activity";
@@ -34,7 +33,7 @@ class Program
                     int duration2 = Message2.DisplayStartingMessage();
                     Console.WriteLine("Get Ready...");
                     Message2.ShowSpinner();
-                    ListingActivity listingActivity = new ListingActivity(activity2, text2);
+                    ListingActivity listingActivity = new ListingActivity(activity2, text2, duration2);
                     listingActivity.Run();
                     Message2.DisplayEndingMessage(duration2, activity2);
                     break;
@@ -45,7 +44,7 @@ class Program
                     int duration3 = Message3.DisplayStartingMessage();
                     Console.WriteLine("Get Ready...");
                     Message3.ShowSpinner();
-                    ReflectionActivity reflectionActivity = new ReflectionActivity(activity3, text3);
+                    ReflectionActivity reflectionActivity = new ReflectionActivity(activity3, text3, duration3);
                     reflectionActivity.Run();
                     Message3.DisplayEndingMessage(duration3, activity3);
                     break;
